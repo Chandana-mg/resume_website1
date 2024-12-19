@@ -1,17 +1,21 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background: #f9f9f9;
+    background: #f9f9f9 url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
     color: #333;
     margin: 0;
     padding: 0;
 }
 
 header {
-    background: #007BFF;
+    background: rgba(0, 123, 255, 0.8);
     color: white;
     padding: 10px 0;
     text-align: center;
+    background-image: url('header-bg.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
 header nav a {
@@ -26,10 +30,20 @@ header nav a:hover {
 
 main {
     padding: 20px;
-    background: white;
+    background: rgba(255, 255, 255, 0.9);
     margin: 20px auto;
     max-width: 800px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+main img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 footer {
